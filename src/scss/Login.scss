@@ -1,0 +1,44 @@
+#logWrap{
+    width:100%;
+    height:auto;
+    position:absolute;
+    left:0;
+    bottom:0;
+    z-index:1;
+    border-radius: 20px 20px 0 0;
+    background-color:#fff;
+
+    #logArea{
+        width:80%;
+        margin:0 auto;
+        padding:30px 0 20px;
+        text-align:center;
+        
+        //문구
+        h3{            
+            font-size:30px;
+            span{
+                color:#d00;
+            }
+        }
+        //버튼
+        #logDesc{
+            widtH:100%;
+            padding-top:15px;
+            button{
+                cursor: pointer;               
+            }
+            #cizionBtn{
+                margin-bottom:15px;
+                padding:10px 50px;
+                border-radius:20px;
+                border:none;            
+                background-color:orange;
+                font-size:18px;
+            }
+        }        
+        #coppyName{
+            font-size:12px;                    
+        }
+    }    
+}

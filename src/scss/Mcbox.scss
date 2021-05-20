@@ -1,0 +1,62 @@
+#McboxWrap{
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    color:#fff;
+
+    //McboxArea
+    #McboxArea{
+        width:95%;
+        margin:0 auto;
+        padding-bottom:20px;      
+
+        //mcbox_first
+        #mcBox_first{
+            width:100%;   
+            p{
+                float:left;
+            }
+            p:last-child{
+                float:right;
+            }
+            &::after{
+                content:"";
+                display: block;
+                clear: both;
+            }
+        }
+
+        //mcbox_middle
+        #mcBox_middle{
+            width:100%;
+            padding-top:15px;
+            font-size:20px;
+            text-align:center;
+        }
+
+        //mcbox_last
+        #mcBox_last{
+            width:100%;
+            padding-top:30px;            
+            p{
+                float:left;
+            }
+            #last_updown{
+                float:right;
+                p{
+                    margin-right:20px;
+                    cursor: pointer;
+                }
+                &::after{
+                    content:"";
+                    display: block;
+                    clear: both;
+                }
+            }
+            &::after{
+                content:"";
+                display: block;
+                clear: both;
+            }
+        }
+    }
+}
+

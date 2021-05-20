@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Writ from "./com/Writ";
+import Cbox from "./com/Cbox";
+import Mcbox from "./com/Mcbox";
+import "./scss/App.scss";
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <BrowserRouter>
+      <div>
+        <Switch>
+          <Route exact path="/">
+          <h2>모바일(width:768px 이하)로 접속해주세요</h2>
+          <div id="CboxWrap">
+            <Mcbox/>
+            <div id="CboxArea">
+              <Cbox/>                       
+            </div>
+            <Writ/>    
+          </div>
+          </Route>        
+        </Switch>            
+      </div>
+      </BrowserRouter>
+      
   );
 }
 

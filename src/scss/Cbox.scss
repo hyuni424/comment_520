@@ -1,0 +1,67 @@
+//reset
+ul{
+    width:100%;
+    li{
+        list-style: none; 
+        width:100%;    
+        border-bottom:1px solid #eee;
+        //cbox_list
+        .cboxList{
+            width:93%;
+            margin:0 auto;    
+    
+            //list_first
+            .listFirst{
+                width:100%;
+                padding-top: 10px;
+                p{
+                    padding-right:20px;
+                    float:left;
+                }
+                button{
+                    cursor: pointer;
+                    padding:0 5px;
+                    border:1px solid #ccc;
+                    background-color:#fff;
+                }
+                &::after{
+                    content:"";
+                    display: block;
+                    clear: both;
+                }
+            }
+    
+            //listMiddle
+            .listMiddle{
+                width:100%;
+                word-break:break-all;
+            }
+    
+            //listLast
+            .listLast{
+                width:100%;
+                padding:10px 0 20px;
+                p{
+                    float:left;
+                    padding:0 5px;
+                    border:1px solid #ccc;
+                    border-radius: 30px;
+                }
+                .lastDesc{
+                    float:right;
+                    p{
+                        margin-left:20px;
+                        cursor: pointer;                
+                    }
+                }
+                &::after{
+                    content:"";
+                    display: block;
+                    clear: both;
+                }
+            }
+        }
+    }
+}
+
+

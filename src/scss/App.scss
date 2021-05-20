@@ -1,0 +1,25 @@
+/* reset */
+*{
+    margin:0; 
+    padding:0;
+}
+
+#CboxWrap{
+    width:100%;
+    height:100vh;    
+    position:relative;
+    display:none;    
+    background-color: #eee;    
+    #CboxArea{
+        width:100%;
+        background-color: #fff;
+    }
+}
+
+@media (max-width:768px){
+    h2{display:none;}
+    
+    #CboxWrap, #CboxArea{
+        display:block;
+    }
+}

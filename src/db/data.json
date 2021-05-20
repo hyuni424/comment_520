@@ -1,0 +1,20 @@
+{
+  "comment": [
+    {
+      "userid": "seoul",
+      "date": "2021-05-20T12:22:17.586Z",
+      "content": "테스트중",
+      "like": 3,
+      "hate": 3,
+      "id": 1
+    },
+    {
+      "userid": "test1",
+      "date": "2021-05-20T13:26:23.281Z",
+      "content": "금지어는 금지 입니다.",
+      "like": 3,
+      "hate": 1,
+      "id": 2
+    }
+  ]
+}
